@@ -1,6 +1,6 @@
 # Rijak Arora — Portfolio
 
-A clean, single-page portfolio laid out like a résumé: a fixed profile panel on the left (name, role, section links, résumé and contact) and scrolling content on the right — About, Experience, Projects, Education, Skills and Contact.
+A clean, single-page portfolio laid out like a résumé: a fixed profile panel on the left (name, role, section links, résumé and contact) and scrolling content on the right — About, Projects, Skills, Education, Certifications, Achievements, Leadership and Contact.
 
 Plain HTML, CSS and JavaScript. No build step, no dependencies. Light and dark themes (follows the system, with a toggle).
 
@@ -8,17 +8,16 @@ Plain HTML, CSS and JavaScript. No build step, no dependencies. Light and dark t
 
 | File | What it is |
 | --- | --- |
-| `index.html` | All page content — every spot to personalise is marked `<!-- EDIT: ... -->` |
+| `index.html` | All page content, one `<section>` per résumé section |
 | `styles.css` | Layout and theme colours (tokens at the top of the file) |
 | `script.js` | Theme toggle, active-section highlighting, copy-email button |
-| `assets/` | Favicon; put your `resume.pdf` here |
+| `assets/` | Favicon and `Rijak_Arora_Resume.pdf` (opened by the Résumé button) |
 
-## Personalise it
+## Updating it
 
-1. **Content** — open `index.html` and search for `EDIT:`. Each role, project and degree is one `<article class="entry">` block; copy or delete blocks as needed.
-2. **Résumé** — add `assets/resume.pdf` (the "Résumé (PDF)" button opens it).
-3. **Email** — replace `you@example.com` in `index.html` (three places: the profile icon, the contact link and the copy button).
-4. **Colours** — change `--accent` and `--accent-soft` at the top of `styles.css` (light and dark blocks).
+1. **Content** — edit `index.html`. Each project is one `<article class="project">`, each dated item (education, leadership) one `<article class="entry">`, and skills, certifications and achievements are label/value rows in a `<dl class="rows">`. Copy or delete blocks as needed.
+2. **Résumé** — replace `assets/Rijak_Arora_Resume.pdf` with a newer version (keep the file name, or update the link in `index.html`).
+3. **Colours** — change `--accent` and `--accent-soft` at the top of `styles.css` (light and dark blocks).
 
 ## Preview locally
 
