@@ -1,26 +1,30 @@
 # Rijak Arora — Portfolio
 
-A fast, responsive, single-page portfolio website. Plain HTML, CSS and JavaScript — no build step, no dependencies.
+An immersive, elegant single-page portfolio. Plain HTML, CSS and JavaScript — no build step, no dependencies.
 
-**Features:** light/dark mode (follows system, with a toggle), mobile menu, scroll-spy navigation, reveal animations (respecting reduced-motion), accessible markup, and a working contact form.
+**Features:** drifting aurora background with dot grid and film grain, cursor spotlight, preloader, floating glass navigation, rotating hero headline, neon avatar ring, scrolling tech marquee, glassmorphism cards, 3D-tilt glowing project cards, count-up stats, blur-in scroll reveals, scroll progress bar, animated form fields, and a sun/moon light–dark switch (follows the system by default). Motion is disabled automatically for visitors who prefer reduced motion.
+
+**UI components** are adapted from [Uiverse.io](https://uiverse.io) (MIT) — see [CREDITS.md](CREDITS.md).
 
 ## Files
 
 | File | What it is |
 | --- | --- |
 | `index.html` | All page content — every spot to personalise is marked `<!-- EDIT: ... -->` |
-| `styles.css` | Styling and theme colours (tokens at the top of the file) |
-| `script.js` | Theme toggle, menu, animations, contact form settings |
+| `styles.css` | Layout, backdrop and theme colours (tokens at the top of the file) |
+| `uiverse.css` | UI components adapted from Uiverse.io (buttons, switch, cards, inputs, loader) |
+| `script.js` | Theme switch, menu, animations, contact form settings |
+| `CREDITS.md` | Uiverse component authors and license |
 | `assets/` | Favicon; put your `resume.pdf`, `profile.jpg` and project screenshots here |
 
 ## Personalise it
 
-1. **Content** — open `index.html` and search for `EDIT:`. Update the headline, about text, stats, skills, experience, projects, and social links (LinkedIn is a placeholder).
+1. **Content** — open `index.html` and search for `EDIT:`. Update the headline (the rotating words are in `data-words`), about text, stats, skills, marquee, experience, projects, and social links (LinkedIn is a placeholder).
 2. **Résumé** — add `assets/resume.pdf` (the "Download résumé" button points there).
-3. **Photo (optional)** — add `assets/profile.jpg` and replace `<span>RA</span>` inside `.avatar` with `<img src="assets/profile.jpg" alt="Rijak Arora">`.
+3. **Photo (optional)** — add `assets/profile.jpg` and replace `<span>RA</span>` inside `.avatar` with `<img src="assets/profile.jpg" alt="">`.
 4. **Project images (optional)** — in `styles.css`, change `.thumb-1` / `.thumb-2` / `.thumb-3` to `background-image: url("assets/project-1.png");`.
 5. **Contact form** — in `script.js` set `CONTACT_EMAIL`. By default the form opens the visitor's email app. To receive messages directly, create a free form at [formspree.io](https://formspree.io) and paste its URL into `FORM_ENDPOINT`.
-6. **Colours** — change `--accent` and `--accent-2` at the top of `styles.css` (both the light and dark blocks).
+6. **Colours** — change `--violet`, `--indigo`, `--cyan` and `--pink` at the top of `styles.css`; `--accent` sets link/label colour for each theme.
 
 ## Preview locally
 
